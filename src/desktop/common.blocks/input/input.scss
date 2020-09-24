@@ -1,6 +1,9 @@
+@import "~normalize.css";
+@import "../text/_body.scss";
 .input {
   height: 44px;
   width: 320px;
   border-radius: 4px;
   border-color: red;
+  font-family: "Montserrat";
 }
