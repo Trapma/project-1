@@ -17,6 +17,8 @@ module.exports = {
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
+      "@color": path.resolve(__dirname, "src/desktop/common-blocks/color"),
+      "@text": path.resolve(__dirname, "src/desktop/common-blocks/text"),
     },
   },
   devServer: {
@@ -24,18 +26,18 @@ module.exports = {
     // hot: isDev,
   },
   plugins: [
-      new HTMLWebpackPlugin({
-          template: "./index.html"
-      }),
-      new CleanWebpackPlugin(),
-      new CopyPlugin({
-        patterns: [
-          {
-            from: path.resolve(__dirname, "src/assets/"),
-            to: path.resolve(__dirname, "dist/assets/"),
-          },
-        ],
-      }),
+    new HTMLWebpackPlugin({
+      template: "./index.html",
+    }),
+    new CleanWebpackPlugin(),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, "src/assets/"),
+          to: path.resolve(__dirname, "dist/assets/"),
+        },
+      ],
+    }),
     new MiniCssExtractPlugin({
       filename: "[name].[hash].css",
       chunkFilename: "[id].css",
@@ -78,7 +80,6 @@ module.exports = {
         test: /\.(ttf|woff|woff2|eot)$/,
         use: ["file-loader"],
       },
-
-    ]
-  }
+    ],
+  },
 };
