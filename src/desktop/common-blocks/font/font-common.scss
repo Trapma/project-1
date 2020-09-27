@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Montserrat";
-  src: url("/assets/font/_body/Montserrat-Light.ttf") format("truetype");
-  src: url("/assets/font/_body/Montserrat-Light.woff") format("truetype");
-  src: url("/assets/font/_body/Montserrat-Light.woff2") format("truetype");
-  src: url("/assets/font/_body/Montserrat-Light.eot") format("truetype");
-  src: url("/assets/font/_body/Montserrat-Light.otf") format("truetype");
-  src: url("/assets/font/_body/Montserrat-Light.svg") format("truetype");
+  src: url("/assets/font/_body/montserrat-v15-latin_cyrillic-regular.ttf") format("truetype");
+  src: url("/assets/font/_body/montserrat-v15-latin_cyrillic-regular.woff") format("woff");
+  src: url("/assets/font/_body/montserrat-v15-latin_cyrillic-regular.woff2") format("woff2");
+  src: url("/assets/font/_body/montserrat-v15-latin_cyrillic-regular.eot") format("embedded-opentype");
+  // src: url("/assets/font/_body/montserrat-v15-latin_cyrillic-regular.otf") format("truetype");
+  src: url("/assets/font/_body/montserrat-v15-latin_cyrillic-regular.svg") format("truetype");
   font-family: "Quicksand";
   src: url("/assets/font/_h/Quicksand-Light.ttf") format("truetype");
   src: url("/assets/font/_h/Quicksand-Light.woff") format("truetype");
@@ -13,4 +13,6 @@
   src: url("/assets/font/_h/Quicksand-Light.eot") format("truetype");
   src: url("/assets/font/_h/Quicksand-Light.otf") format("truetype");
   src: url("/assets/font/_h/Quicksand-Light.svg") format("truetype");
+  font-style: normal;
+  font-weight: 400;
 }
