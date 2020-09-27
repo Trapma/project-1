@@ -1,5 +1,8 @@
 @import "~normalize.css";
-@import "/desktop/common-blocks/text/text-common.scss";
-@import "/desktop/common-blocks/color/color-common.scss";
-@import "/desktop/common-blocks/input/input.scss"
+@import "../desktop/common-blocks/font/font-common.scss";
+@import "../desktop/common-blocks/color/color-common.scss";
+@import "../desktop/common-blocks/input/input.scss";
 
+h1{
+    font-family: "Quicksand";
+}

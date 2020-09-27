@@ -30,14 +30,14 @@ module.exports = {
       template: "./index.html",
     }),
     new CleanWebpackPlugin(),
-    new CopyPlugin({
-      patterns: [
-        {
-          from: path.resolve(__dirname, "src/assets/"),
-          to: path.resolve(__dirname, "dist/assets/"),
-        },
-      ],
-    }),
+    // new CopyPlugin({
+    //   patterns: [
+    //     {
+    //       from: path.resolve(__dirname, "src/assets/"),
+    //       to: path.resolve(__dirname, "dist/assets/"),
+    //     },
+    //   ],
+    // }),
     new MiniCssExtractPlugin({
       filename: "[name].[hash].css",
       chunkFilename: "[id].css",
@@ -77,8 +77,11 @@ module.exports = {
         use: ["file-loader"],
       },
       {
-        test: /\.(ttf|woff|woff2|eot)$/,
-        use: ["file-loader"],
+        test: /\.(ttf|woff|woff2|eot|otf)$/,
+        loader: "file-loader",
+        options: {
+          outputPath: "font",
+        },
       },
     ],
   },
