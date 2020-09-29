@@ -1,0 +1,9 @@
+.input__field_hover-focus {
+  
+  &:hover {
+    border-color: $darkShade50;
+  }
+  &:focus {
+    border-color: $darkShade50;
+  }
+}
